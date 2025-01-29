@@ -7,6 +7,8 @@ Key Responsibilities:
 ✅ Collaborated with a team using Git and GitHub for version control.
 
 Tech Stack: React.js, JavaScript, HTML, CSS, Git, APIs
+
+
 Key Achievements:
 🚀 Improved the application’s performance and user experience.
 🚀 Built reusable UI components for scalability.
