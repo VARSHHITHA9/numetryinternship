@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numetry</title>
+  <link rel="stylesheet" href="land.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /* Paste the slideshow styles here */
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+   <img src="https://numetry.in/wp-content/uploads/2023/04/WhatsApp-Image-2023-09-04-at-12.13.58.jpeg" width="5%" height="5%">
+    <ul class="nav-links">
+      <li><a href="#">HOME</a></li>
+      <li><a href="https://numetry.in/about-us/">ABOUT</a></li>
+      <li class="dropdown">
+        <a href="https://numetry.in/services/">SERVICES <i class="fas fa-caret-down"></i></a>
+        <ul class="dropdown-content">
+          <li><a href="#">Microsoft Technologies</a></li>
+          <li><a href="#">Cloud Computing &DBA Services</a></li>
+          <li><a href="#">Frontend Development</a></li>
+          <li><a href="#">UI/UX Development</a></li>
+          <li><a href="#">Opensource Development</a></li>
+          <li><a href="#">Digital Marketing Services</a></li>
+          <li><a href="#">Mobile Technologies</a></li>
+        </ul>
+      </li>
+    
+    <li> <a href="https://numetry.in/technologies/">TECHNOLOGIES</a></li>
+    <li  class="dropdown">
+      <a href="https://numetry.in/industry/">INDUSTRY</a>
+      <ul class="dropdown-content">
+           <li><a href="#">Agriculture</a></li>
+           <li><a href="#">Education</a></li>
+           <li><a href="#">E-Commerce</a></li>
+           <li><a href="#">Fintech</a></li>
+           <li><a href="#">Healthcare</a></li>
+           <li><a href="#">Hi-Tech</a></li>
+           <li><a href="#">Hospitality</a></li>
+           <li><a href="#">Insurance</a></li>
+           <li><a href="#">Life Science</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+     <a href="https://numetry.in/hire-developer/">HIRE DEVELOPER</a>
+      <ul class="dropdown-content">
+        
+        <li><a href=""> .NET DEVELOPERS</a></li>
+        <li><a href=""> ANGULAR DEVELOPERS</a></li>
+        <li><a href="#"> REACTJS DEVELOPERS</a></li>
+        <li><a href="#"> REACT NATIVE DEVELOPERS</a></li>
+        <li><a href=""> NODE JS DEVELOPERS</a></li>
+        <li><a href=""> LARAVEL DEVELOPERS</a></li>
+        <li><a href=""> IOS DEVELOPERS</a></li>
+        <li><a href=""> ANDRIOD APP DEVELOPERS</a></li>
+      </ul>
+    </li>
+      <li><a href="https://numetry.in/contact-us/">CONTACT US</a></li>
+      <li><a href="https://numetry.in/what-we-do/">WHAT WE DO</a></li>
+
+    </ul>
+  </div>
+</nav>
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="https://numetry.in/wp-content/uploads/2023/04/TECHNOLOGIES-1.png" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="https://numetry.in/wp-content/uploads/2023/04/MJ123-2.png" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="https://numetry.in/wp-content/uploads/2023/04/NU23.png" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+
+<!-- Add more sections as needed -->
+
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+

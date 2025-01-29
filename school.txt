@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Homepage</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff;
+        }
+        .header {
+            background-color:#798abf;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container {
+            margin-top: 20px;
+        }
+        .jumbotron {
+            background-color: #798abf;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color:#798abf ;
+            color: #fff;
+            padding: 2px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Haliya Public School</h1>
+        <p>where we build future</p>
+    </div>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h2>Welcome to Our School</h2>
+            <p>Here academic excellence meets a nurturing environment for holistic development. With a rich history spanning over 50 years, Haliya Public School is a beacon of quality education and character building.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="school.jpeg" class="card-img-top" alt="School Image" width="270" height="270">
+                    <div class="card-body">
+                        <h5 class="card-title">Our Campus</h5>
+                        <p class="card-text">Explore our state-of-the-art campus facilities and infrastructure.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Screenshot 2024-01-24 154719.png" class="card-img-top" alt="School Image" width="300" height="290">
+                    <div class="card-body">
+                        <h5 class="card-title">Academic Programs</h5>
+                        <p class="card-text">Discover our diverse range of academic programs and courses.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Top-5-Benefits-of-Co-Curricular-Activities-for-Students.png" class="card-img-top" alt="School Image" width="300" height="270">
+                    <div class="card-body">
+                        <h5 class="card-title">Extracurricular Activities</h5>
+                        <p class="card-text">Get involved in various extracurricular activities and enhance your skills.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Haliya Public School. All rights reserved.</p>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

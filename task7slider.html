@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: left;}
+
+/* Slideshow container */
+.slideshow-container {
+  display: flex;
+  max-width: 50%;
+  position:absolute;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/* Caption text */
+.text {
+    font: size 10px;
+    padding-left: 20px;
+    padding-top: 2%;
+    float: right;
+    align-items: flex-start;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(53, 133, 158);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body style="background-color: antiquewhite;">
+
+<h2>Automatic Slideshow</h2>
+<p>Change image every 2 seconds:</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="https://m.media-amazon.com/images/I/71PzXKXjz6L._SL1500_.jpg" style="width:70%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="https://m.media-amazon.com/images/I/71D4R3gRKjL._SL1500_.jpg" style="width:70%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="https://m.media-amazon.com/images/I/61lsp+ESMVL._SL1500_.jpg" style="width:70%">
+  
+</div>
+<div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://m.media-amazon.com/images/I/81Jx9HjYt0L._SL1500_.jpg" style="width:70%">
+    
+</div>
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://m.media-amazon.com/images/I/71+9FHlmwKL._SL1500_.jpg" style="width:70%">
+    
+</div>
+<div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://m.media-amazon.com/images/I/51ImByT01SL._SL1500_.jpg" style="width:70%">
+    
+</div>
+</div>
+<br>
+<div style="text-align:left">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+</div>
+<div class="text">
+    <h1>Samsung Galaxy S22 Ultra 5G <br>(Green, 12GB, 256GB Storage) <br>with No Cost EMI/Additional <br>Exchange Offers</h1>
+    <a href="https://www.amazon.in/stores/SamsungBrandStore/page/7613B800-61FF-4320-8DEF-4A3711D5E41C?ref_=ast_bln">Visit Samsung Store</a>
+    <p>for</p>
+    <a href="https://www.amazon.in/s?k=samsung+s22+ultra+5g&ref=choice_dp_b"><small>"samsung s22 ultra 5g"</small></a>
+</div>
+</div>
+
+
+
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 
+
+
+

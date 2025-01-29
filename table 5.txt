@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Table</title>
+<style>
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        
+       
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: center;
+        border-bottom: 1px solid #c6c78c;
+        background-color: rgb(179, 147, 208);
+       
+    }
+
+    @media only screen and (max-width: 400px) {
+        th, td {
+            padding: 10px;
+           
+        }
+    }
+</style>
+</head>
+<body style="background-color:blanchedalmond;" >
+
+<h2 style="color: rgb(121, 120, 181);">Responsive Table</h2>
+<p>Below Table Contains Personal Details Of Employers Of Comapany</p>
+
+<div style="overflow-x:auto;">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>Mobile number</th>
+                <th>address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>james</td>
+                <td>29</td>
+                <td>james@gamil.com</td>
+                <td>2345609873</td>
+                <td>123 Main St, Cityville</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>30</td>
+                <td>john@example.com</td>
+                <td>1234567567</td>
+                <td>456 Elm St, Townsville</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>25</td>
+                <td>jane@example.com</td>
+                <td>2345690876</td>
+                <td>789 Oak St, Villageton</td>
+            </tr>
+            <tr>
+                <td>Tom Johnson</td>
+                <td>35</td>
+                <td>tom@example.com</td>
+                <td>2134567087</td>
+                <td>321 Pine St, Hamletville</td>
+            </tr>
+            <tr>
+                <td>Alice Johnson</td>
+                <td>28</td>
+                <td>alice@example.com</td>
+                <td>2134567087</td>
+                <td>567 Cedar St, Riverside</td>
+            </tr>
+            <tr>
+                <td>Michael Brown</td>
+                <td>40</td>
+                <td>michael@example.com</td>
+                <td>2345690876</td>
+                <td>890 Birch St, Lakeside</td>
+            </tr>
+            <tr>
+                <td>Sarah Lee</td>
+                <td>33</td>
+                <td>sarah@example.com</td>
+                <td>1234567567</td>
+                <td>111 Maple St, Hilltown</td>
+            </tr>
+            <tr>
+                <td>David Wilson</td>
+                <td>45</td>
+                <td>david@example.com</td>
+                <td>1234567567</td>
+                <td>222 Walnut St, Valleyview</td>
+            </tr>
+            <tr>
+                <td>Emily Davis</td>
+                <td>27</td>
+                <td>emily@example.com</td>
+                <td>1234567567</td>
+                <td>333 Pine St, Lakeshore</td>
+            </tr>
+            <tr>
+                <td>James Taylor</td>
+                <td>31</td>
+                <td>james@example.com</td>
+                <td>2134567087</td>
+                <td>111 Maple St, Hilltown</td>
+
+
+            </tr>
+            <tr>
+                <td>Linda Martinez</td>
+                <td>38</td>
+                <td>linda@example.com</td>
+                <td>2345609873</td>
+                <td>444 Oak St, Hillcrest</td>
+            </tr>
+            <tr>
+                <td>Robert Clark</td>
+                <td>29</td>
+                <td>robert@example.com</td>
+                <td>1234567567</td>
+                <td>333 Pine St, Lakeshore</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

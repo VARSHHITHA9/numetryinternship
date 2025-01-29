@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>countdown timer</title>
+  <style>
+    body{
+        background-color: rgb(151, 115, 185);
+    }
+    #timer {
+      font-family: Arial, sans-serif;
+      font-size: 100px;
+      text-align: center;
+      padding: 20px;
+      border: 20px solid #ccc;
+      border-radius: 5px;
+      width: 1000px;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+    h1{
+        font-size: 50px;
+    }
+  </style>
+</head>
+<body>
+<h1 style="text-align: center;">COUNTDOWN TIMER</h1>
+<div id="timer"></div>
+
+<script>
+function countdown() {
+  // Set the countdown date (e.g., December 31, 2024 23:59:59)
+  var countDownDate = new Date("feb 28, 2024 23:59:59").getTime();
+
+  // Update the countdown every second
+  var x = setInterval(function() {
+
+    // Get the current date and time
+    var now = new Date().getTime();
+    
+    // Calculate the distance between now and the countdown date
+    var distance = countDownDate - now;
+    
+    // Calculate days, hours, minutes, and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Display the countdown in the element with id="timer"
+    document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the countdown is over, display a message
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("timer").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+}
+
+// Call the countdown function
+countdown();
+</script>
+
+</body>
+</html>
+
+
