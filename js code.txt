@@ -1,0 +1,120 @@
+1.Write a JavaScript function to calculate the sum of two numbers.  
+
+function calculateSum(num1, num2) {
+    return num1 + num2;
+}
+
+// Example usage:
+var result = calculateSum(5, 3);
+console.log(result); // Output will be 8
+
+
+2.Write a JavaScript function to check if a given string is a palindrome (reads the same forwards and backwards). 
+
+
+function isPalindrome(str) {
+    // Remove non-alphanumeric characters and convert to lowercase
+    const cleanStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+    
+    // Compare the original string with its reverse
+    return cleanStr === cleanStr.split('').reverse().join('');
+}
+
+// Test the function
+console.log(isPalindrome("A man, a plan, a canal, Panama")); // Output: true
+console.log(isPalindrome("racecar")); // Output: true
+console.log(isPalindrome("hello")); // Output: false
+
+
+3.Write a JavaScript program to reverse a given string. 
+
+function reverseString(str) {
+    // Split the string into an array of characters, reverse the array, and join it back into a string
+    return str.split('').reverse().join('');
+}
+
+// Test the function
+console.log(reverseString("hello")); // Output: "olleh"
+console.log(reverseString("JavaScript")); // Output: "tpircSavaJ"
+
+
+4.Write a JavaScript program to calculate the factorial of a given number. 
+
+function factorial(num) {
+    // Base case: factorial of 0 or 1 is 1
+    if (num === 0 || num === 1) {
+        return 1;
+    } else {
+        // Recursive case: factorial of n is n * factorial(n - 1)
+        return num * factorial(num - 1);
+    }
+}
+
+// Test the function
+console.log(factorial(5)); // Output: 120 (5 * 4 * 3 * 2 * 1)
+console.log(factorial(0)); // Output: 1 (by definition)
+console.log(factorial(1)); // Output: 1 (by definition)
+console.log(factorial(10)); // Output: 3628800 (10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1)
+
+
+5.Write a JavaScript program to find the largest element in a nested array. 
+
+function findLargestInNestedArray(arr) {
+    // Initialize a variable to store the largest element
+    let largest = -Infinity;
+    
+    // Iterate through the array
+    for (let i = 0; i < arr.length; i++) {
+        // If the current element is an array (nested array), recursively call the function
+        if (Array.isArray(arr[i])) {
+            let nestedMax = findLargestInNestedArray(arr[i]);
+            // Update the largest element if the nested array's maximum is greater
+            if (nestedMax > largest) {
+                largest = nestedMax;
+            }
+        } else {
+            // Update the largest element if the current element is greater
+            if (arr[i] > largest) {
+                largest = arr[i];
+            }
+        }
+    }
+    
+    return largest;
+}
+
+// Test the function
+const nestedArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+console.log("Largest element in nested array:", findLargestInNestedArray(nestedArray)); // Output: 9
+
+
+6.Write a JavaScript function that returns the Fibonacci sequence up to a given number of term
+
+function fibonacciSequence(numTerms) {
+    // Initialize an array to store the Fibonacci sequence
+    let sequence = [];
+    
+    // First two terms of Fibonacci sequence
+    let a = 0;
+    let b = 1;
+    
+    // Add the first two terms to the sequence array
+    sequence.push(a);
+    sequence.push(b);
+    
+    // Generate subsequent terms of Fibonacci sequence
+    for (let i = 2; i < numTerms; i++) {
+        let c = a + b; // Calculate the next term
+        sequence.push(c); // Add it to the sequence array
+        // Update variables for the next iteration
+        a = b;
+        b = c;
+    }
+    
+    return sequence;
+}
+
+// Test the function
+const numTerms = 10;
+console.log("Fibonacci sequence up to", numTerms, "terms:", fibonacciSequence(numTerms));
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare Management</title>
+  <link rel="stylesheet" href="landing2.css">
+</head>
+<body>
+  <div class="topnav">
+    <a class="active" href="#home">HOME</a>
+    <a href="piechart.html">OBSESE</a>
+    <a href="overweight.html">OVERWEIGHT</a>
+    <a href="normalweight.html">NORMAL WEIGHT</a>
+    <a href="underweight.html">UNDERWEIGHT</a>
+    <a href="#about">PROFILE</a>
+  </div>
+  
+  <header>
+    <h1>Welcome to Healthcare Management</h1>
+  </header>
+  
+  
+<section id="bmi-section">
+    <h2>BMI Calculator</h2>
+    <div>
+      <label for="height">Height (cm):</label>
+      <input type="number" id="height">
+    </div>
+    <div>
+      <label for="weight">Weight (kg):</label>
+      <input type="number" id="weight">
+    </div>
+    <button onclick="calculateBMI()">Calculate BMI</button>
+    <p id="bmi-result"></p>
+  </section>
+  <section id="exercise-section">
+    <h2>Gym Exercise Tips</h2>
+    <p>Include a balanced mix of cardio and strength training exercises for optimal health.</p>
+    <p>Consult with a fitness trainer for personalized exercise plans.</p>
+  </section>
+  <section id="yoga-section">
+    <h2>Yoga Information</h2>
+    <p>Yoga can improve flexibility, strength, and mental well-being.</p>
+    <p>Find a certified yoga instructor for guidance on suitable poses and routines.</p>
+  </section>
+  <section id="nutrition-section">
+    <h2>Nutrition Diet Plans</h2>
+    <p></p>
+    <ul id="diet-plans">
+      <!-- JavaScript will populate this list based on BMI -->
+    </ul>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+  <script src="landing2.js"></script>
+</body>
+</html>

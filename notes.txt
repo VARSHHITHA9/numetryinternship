@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes and Password Manager</title>
+  <link rel="stylesheet" href="notes.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Notes and Password Manager</h1>
+    <div id="loginForm">
+      <h2>Login</h2>
+      <input type="text" id="loginUsername" placeholder="Username">
+      <input type="password" id="loginPassword" placeholder="Password">
+      <button onclick="login()">Login</button>
+      <p id="registerLink">New user? <a href="register.html">Register here</a></p>
+      
+    </div>
+  </div>
+
+  <script src="notes.js"></script>
+</body>
+</html>

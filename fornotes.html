@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Notes</h1>
+    <div id="notesForm">
+      <textarea id="notesTextarea" placeholder="Write your notes here..."></textarea>
+      <button onclick="saveNotes()">Save</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Function to retrieve username from URL query parameters
+    function getUsernameFromURL() {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get('username');
+    }
+
+    // Display notes of the logged-in user
+    const username = getUsernameFromURL();
+    if (username) {
+      const user = users.find(user => user.username === username);
+      if (user) {
+        document.getElementById("notesTextarea").value = user.notes;
+      } else {
+        alert("User not found.");
+      }
+    } else {
+      alert("Username not provided.");
+    }
+  </script>
+</body>
+</html>

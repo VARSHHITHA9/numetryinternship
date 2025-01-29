@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unique Registration Form</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #eaeaea;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      width: 350px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    small {
+      font-size: 10px;
+      color: #888;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="uniqueRegistrationForm">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mobileNumber">Mobile Number:</label>
+    <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{10}" required>
+    <small>Format: 1234567890</small>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="button" onclick="submitUniqueForm()">Register Now</button>
+  </form>
+
+  <script>
+    function submitUniqueForm() {
+      var firstName = document.getElementById('firstName').value;
+      var lastName = document.getElementById('lastName').value;
+      var gender = document.getElementById('gender').value;
+      var dob = document.getElementById('dob').value;
+      var email = document.getElementById('email').value;
+      var mobileNumber = document.getElementById('mobileNumber').value;
+      var password = document.getElementById('password').value;
+
+      // Perform validation if needed
+
+      // Display submitted data (you can send this to a server in a real scenario)
+      alert('Submitted Data:\nFirst Name: ' + firstName + '\nLast Name: ' + lastName + '\nGender: ' + gender + '\nDate of Birth: ' + dob + '\nEmail: ' + email + '\nMobile Number: ' + mobileNumber);
+    }
+  </script>
+
+</body>
+</html>
+

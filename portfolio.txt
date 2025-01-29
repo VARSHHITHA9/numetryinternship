@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+
+</head>
+<body>
+    <header class="header">
+        <a href='#' class="logo">Banda Varshitha</a>
+        
+        
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#resume">Resume</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a> 
+         
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-image">
+            <img src="image1.png.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi,I'm Varshitha </h1>
+            <h3>Frontend Developer</h3>
+            <p>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
+            <div class="home-sci">
+              
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+
+           
+        </div>
+    </section>
+    <section class="about" >
+        <div class="about-content">
+       <h2>About Me</h2>
+        <p>I'm currently persuing Bachelor Of Technology with the CSE(IOT) branch from HITAM.
+            My soft skills include: I am optimistic, smart, self-confident, hardworking, and have a positive mindset.I have a good command of web technologies.
+            My interests include dancing, Internet surfing and listening to music,reading novels.
+            Check out some of my work in the Projects section.
+            I'm open to freelancing opportunities where I can contribute, learn, and grow. If you have a good freelance opportunity that matches my skills and experience, please don't hesitate to contact me.</p>
+         
+                <h3 >My Skills</h3>
+                <div class="skills">
+                  <div class="skills__skill">HTML</div>
+                  <div class="skills__skill">CSS</div>
+                  <div class="skills__skill">JavaScript</div>
+                  <div class="skills__skill">Python</div>
+                  <div class="skills__skill">Java</div>
+                  <div class="skills__skill">C</div>
+                  <div class="skills__skill">SQL </div>
+                </div>
+        </div>      
+    </section>
+    <section class="resume">
+        <div class="resume-content">
+        <h2>Resume</h2>
+        <a href="resume.pdf" target="_blank">Download Resume</a>
+        </div>
+    </section>
+    <section id="Services">
+        <div class="Services-content">
+        <h2>Services</h2>
+        <p>Offering freelance front-end web development and design services.</p>
+        </div>
+    </section>
+    <section id="Projects">
+        <div class="Projects-content">
+        <h2>Projects</h2>
+        <h3>E-Health Connect</h3>
+        <p>Developed a chat-bot web application that prescribes medicine for people, especially in rural areas. Users enter their symptoms, and the system recommends medication. If the user needs emergency assistance, they can video call a doctor. Currently, the application only supports text and voice chat, but video calling is under development.</p>
+        <h3>WanderWisely</h3>
+        <p>Built a login-free India travel planner web app that lets users pick places to explore. It provides info on local attractions, amusements, and hotels at the chosen place, plus maps from the user's source to destination.</p>
+        </div>
+    </section>
+    <section id="Contact">
+        <div class="Contact-content">
+        <h2>Contact</h2>
+        <p>Mobile Number :6305990182</p>
+        <p>Mail id:varshithareddy014@gmail.com</p>
+        </div>
+    </section>
+    
+</body>
+</html>
+

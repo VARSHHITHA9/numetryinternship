@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<body>
+<h1>Goal: To lose weight gradually and maintain a balanced diet.</h1>
+<h2>Meal Plan:</h2>
+<p><b>Breakfast:</b> Whole grain cereal with skim milk and sliced bananas.<br>
+   <b>Mid-Morning Snack:</b>  A piece of fruit (e.g., an orange or an apple)<br>
+    <b>Lunch:</b> Grilled chicken salad with mixed greens, tomatoes, cucumbers, and balsamic vinaigrette.<br>
+    <b>Afternoon Snack:</b> Air-popped popcorn (unsalted).<br>
+    <b>Dinner:</b> Baked cod with quinoa and steamed broccoli.<br>
+   <b>Before Bed:</b>  A small bowl of non-fat Greek yogurt.</p>
+<div id="myPlot" style="width:100%;max-width:700px"></div>
+
+<script>
+const xArray = ["Carbs", "Protein", "Fat"];
+const yArray = [44.7, 28.9,26.3];
+
+const layout = {title:"if u r <b>Overweight</b> ur intake should be :check below"};
+
+const data = [{labels:xArray, values:yArray, type:"pie"}];
+
+Plotly.newPlot("myPlot", data, layout);
+
+
+
+</script>
+
+</body>
+</html>
